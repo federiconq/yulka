@@ -34,20 +34,16 @@
             width: 90%;
             max-width: 500px;
             position: relative;
-            padding-top: 177.77%; /* 9:16 ratio */
             background-color: #ffffff;
             border: 2px solid #ff99cc;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        video {
             width: 100%;
-            height: 100%;
-            border: none;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -57,7 +53,10 @@
         <p>Wishing you a holiday filled with love and joy.</p>
     </header>
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/Hxt50cutu4E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video controls>
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>    
 </body>
 </html>
